@@ -1,0 +1,61 @@
+GET http://localhost:5009/api/peliculas
+
+###
+
+GET http://localhost:5009/api/peliculas/16
+
+###
+
+POST http://localhost:5009/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Sherk",
+    "sinopsis": "Sin sinpsis.",
+    "anio": 2001,
+    "poster": "Sin poster",
+    "categorias": [2, 3]
+}
+###
+
+POST http://localhost:5009/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Sinbad",
+    "sinopsis": "Simbad el marino, finalmente ha encontrado lo que ha buscado durante todas sus aventuras: problemas graves. La malvada diosa griega del caos, Eris, ha fingido ser el marino y así ha robado el legendario Libro de la Paz, uno de los tesoros más valiosos y poderosos del mundo. ",
+    "anio": 2003,
+    "poster": "https://mx.web.img2.acsta.net/r_1280_720/medias/nmedia/18/35/08/28/affiche.jpg",
+    "categorias": [2, 3]
+}
+
+###
+
+POST http://localhost:5009/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Meteoro",
+    "sinopsis": "Meteoro es un joven de 18 años, cuya vida, amor y pasión siempre han sido las carreras de automóviles, afición que empezó desde que era niño, mientras admiraba e idolatraba a su hermano mayor Rex, quien, aparentemente, murió en un accidente en la famosa y peligrosa carrera a campo traviesa conocida como The Crucible.",
+    "anio": 2008,
+    "poster": "https://mx.web.img2.acsta.net/r_1280_720/img/60/e8/60e84fa378ac325ed59cac58f747a49f.jpg",
+    "categorias": [1, 2, 4]
+}
+
+###
+
+PUT http://localhost:5009/api/peliculas/19
+Content-Type: application/json
+
+{
+    "peliculaid": 19,
+    "titulo": "Sherk",
+    "sinopsis": "Hace mucho tiempo, en una lejanísima ciénaga, vivía un feroz ogro llamado Shrek. De repente, un día, su soledad se ve interrumpida por una invasión de sorprendentes personajes.",
+    "anio": 2024,
+    "poster": "https://picfiles.alphacoders.com/349/349440.jpg",
+    "categorias": [2, 3, 5]
+}
+
+###
+
+DELETE http://localhost:5009/api/peliculas/16

@@ -1,0 +1,28 @@
+GET http://localhost:5009/api/categorias
+
+###
+
+GET http://localhost:5009/api/categorias/16
+
+###
+
+POST http://localhost:5009/api/categorias
+Content-Type: application/json
+
+{
+    "nombre": "Found Footage"
+}
+
+###
+
+PUT http://localhost:5009/api/categorias/17
+Content-Type: application/json
+
+{
+    "categoriaid": 17,
+    "nombre": "Found Fotage/Metraje Encontrado"
+}
+
+###
+
+DELETE http://localhost:5009/api/categorias/16
